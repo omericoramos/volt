@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\CounterComponent;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -9,3 +10,5 @@ Route::get('/', function () {
 
 // tratando o componente como pagina inteira
 Volt::route('/users', 'counter');
+
+Route::get('/counter', CounterComponent::class);
